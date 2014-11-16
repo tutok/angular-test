@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+    <div class="jumbotron">
+        <h1>ASP.NET with angular</h1>
+    </div>
+
+<div ng-app="phonecatApp">
+    <h1>Phone gallery</h1>
+
+    <div class="row">
+        <div class="col-md-12" ng-controller="PhoneListCtrl">
+            <ul>
+                <li ng-repeat="phone in phones">
+                    <span>{{phone.name}}</span>
+                    <p>{{phone.snippet}}</p>
+                </li>
+            </ul>
+            <p>Total number of phones: 2</p>
+        </div>
+    </div>
+</div>
